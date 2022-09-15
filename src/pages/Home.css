@@ -1,0 +1,241 @@
+*{
+    /* border:1px solid red; */
+}
+
+.home-container{
+    background: linear-gradient(#E1F2ED
+    , #F7EEFF);
+    padding:20px;
+}
+
+.login{
+    width:100px;
+    padding:10px;
+    background-color:transparent;
+    border:3px solid darkblue;
+    border-radius:20px;
+    font-weight:500;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.logo{
+    display:flex;
+    justify-content:flex-start;
+    max-width:1050px;
+    width:100%;
+}
+
+.logo img{
+    width:200px;
+    height:50px;
+}
+
+.page-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    min-height:100vh;
+}
+
+.homecard-container{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    max-width:1200px;
+    width:100%;
+}
+/* 
+.radial{
+    background:radial-gradient(#E1F2ED,#F8EAE8);
+    height:20px;
+    width:200px;
+} */
+
+.homecard-text-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height:300px;
+    max-width:600px;
+    width:100%;
+}
+
+.homecard-text-container h1{
+    font-size:38px;
+    font-weight:500;
+}
+
+.homecard-text-container h1 span{
+    font-weight: 800;
+}
+
+.homecard-text-container h3 {
+    font-weight: 400;
+}
+
+.homecard-image-container img{
+    width:300px;
+    height: auto;
+}
+
+.button-container{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.button-container  button{
+    width:200px;
+    height:50px;
+    border-radius:5px;
+    margin:0px 10px;
+    font-weight:700;
+    outline:none;
+    border:none;
+}
+
+.enter-button{
+    background-color:#9B51E0;
+    color:white;
+}
+
+.enter-button:hover{
+    background-color:#9b51e0c9;
+}
+
+.learn-more-button{
+    color:#0A2540;
+    transition:ease-in-out;
+}
+
+.learn-more-button:hover .chevron-right{
+    position: relative;
+    left:5px;
+}
+
+.chevron-right{
+    position:relative;
+    top:8px;
+}
+
+.star-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.large-star img{
+    width:50px;
+    height:50px;
+}
+
+.small-star{
+    position:relative;
+    right:30px;
+
+}
+
+.small-star img{
+    width:30px;
+    height:30px;
+}
+
+    /* START OF MEDIA QUERIES */
+@media(max-width:1260px){
+    .logo{
+        display:flex;
+        justify-content:flex-start;
+        max-width:1000px;
+        width:100%;
+    }
+}
+
+@media(max-width:1060px){
+    .logo{
+        display:flex;
+        justify-content:flex-start;
+        max-width:950px;
+        width:100%;
+    }
+}
+
+@media(max-width:850px){
+    .homecard-text-container{
+        height:300px;
+        max-width:400px;
+        width:100%;
+    }
+    .homecard-image-container img{
+        width:250px;
+        height: auto;
+    }
+    .large-star img{
+        width:30px;
+        height:30px;
+    }
+    
+    .small-star{
+        position:relative;
+        right:30px;
+    
+    }
+    
+    .small-star img{
+        width:20px;
+        height:20px;
+    }
+}
+@media(max-width:720px){
+    .homecard-text-container{
+        height:300px;
+        max-width:300px;
+        width:100%;
+    }
+    .homecard-text-container h1{
+        font-size:32px;
+        font-weight:500;
+    }
+    .homecard-text-container h3{
+        font-size:16px;
+    }
+}
+@media(max-width:625px){
+    .homecard-container{
+        flex-direction:column;
+    }
+    .homecard-text-container{
+        height:300px;
+        max-width:500px;
+        width:100%;
+    }
+    .homecard-text-container h1{
+        font-size:32px;
+        font-weight:500;
+    }
+    .homecard-text-container h3{
+        font-size:16px;
+    }
+    .homecard-image-container img{
+        width:300px;
+        height: auto;
+    }
+    .large-star img{
+        width:30px;
+        height:30px;
+    }
+    .small-star{
+        position:relative;
+        right:30px;
+    
+    }
+    
+    .small-star img{
+        width:20px;
+        height:20px;
+    }
+}
